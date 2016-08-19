@@ -1,4 +1,5 @@
-var min = 24;
+$(document).ready(function(){
+ var min = 24;
 var sec = 59;
 var over;
 
@@ -121,4 +122,6 @@ $("#incwork").click(function() {
   if (min < 249) //MAXIMUM VALUE OF WORKING SESSION
     min++; //FOR INCREASING WORK SESSION
   document.getElementById("work").innerHTML = min + 1;
+});
+ 
 });
