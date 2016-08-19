@@ -1,0 +1,178 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #EEEEEE;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 700px;
+  height: 250px;
+  background-color: transparent;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  position: relative;
+  margin: auto;
+  top: 105px;
+}
+
+.flex-item {
+  background-color: transparent;
+  text-align: center;
+  margin: auto;
+}
+
+#start,
+#pause,
+#reset {
+  position: relative;
+  bottom: 270px;
+  border: none;
+  background: #ececec;
+  font-size: 12px;
+  color: white;
+  padding: 9px;
+  border-radius: 30px;
+  cursor: pointer;
+  fon-family: Josefin Slab;
+  color: gray;
+}
+
+#start,
+#pause,
+#reset:hover {
+  color: white;
+  background: #2C3E50;
+}
+
+#decbreak,
+#incbreak,
+#decwork,
+#incwork {
+  padding: 1px 7px 1px 7px;
+  font-size: 16px;
+  border: none;
+  border-radius: 70px;
+  background: #F27935;
+  color: white;
+}
+
+#brek,
+#work {
+  font-size: 30px;
+  font-family: Josefin Slab;
+}
+
+#breaksection {
+  position: relative;
+  right: 100px;
+}
+
+#worksection {
+  position: relative;
+  left: 100px;
+}
+
+h1 {
+  position: relative;
+  font-family: Graduate;
+  color: #34495E;
+  border: 5px solid;
+  width: 40%;
+  margin: 20px auto;
+}
+
+footer {
+  position: relative;
+  top: 340px;
+  left: 45%;
+  right: 40%;
+  font-weight: bold;
+  font-size: 8px;
+}
+
+.no {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  line-height: 500px;
+  text-align: center;
+  background-color: #000;
+  position: relative;
+  bottom: 100px;
+  font-family: Graduate;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  webkit-animation-timing-function: ease-in-out;
+}
+
+.circle:hover {
+  background-color: #F4D03F;
+}
+
+.circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  line-height: 500px;
+  text-align: center;
+  background-color: #D24D57;
+  position: relative;
+  bottom: 100px;
+  font-family: Graduate;
+  border: 10px solid #6C7A89;
+}
+
+@keyframes example {
+  0% {
+    background-color: #e9d460;
+  }
+  25% {
+    background-color: #F2784B;
+  }
+  50% {
+    background-color: #4DAF7C;
+  }
+  75% {
+    background-color: #336E7B;
+  }
+  100% {
+    background-color: #E74C3C;
+  }
+}
+
+
+/*new animation*/
+
+
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes mymove {
+  50% {
+    border: 15px;
+  }
+}
+
+
+/* Standard syntax */
+
+@keyframes mymove {
+  50% {
+    border: 25px;
+  }
+}
+
+.wow {
+  -webkit-animation: mymove 5s infinite;
+  /* Chrome, Safari, Opera */
+  animation: mymove 5s infinite;
+  border: 20px solid #F9BF3B;
+}
